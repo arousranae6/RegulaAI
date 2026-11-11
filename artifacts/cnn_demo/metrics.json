@@ -1,0 +1,58 @@
+{
+  "run_name": "cnn_demo",
+  "architecture": "cnn",
+  "device": "cpu",
+  "parameters": 43715,
+  "duration_seconds": 1.52,
+  "best_val_macro_f1": 0.38262,
+  "config": {
+    "data": "data/demo",
+    "out": "artifacts",
+    "run_name": "cnn_demo",
+    "model": "cnn",
+    "length": 200,
+    "epochs": 4,
+    "batch_size": 32,
+    "lr": 0.001,
+    "dropout": 0.2,
+    "kernel_size": 7,
+    "hidden_size": 128,
+    "heads": 4,
+    "d_model": 64,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "device": "auto"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.19691,
+      "val_loss": 1.11718,
+      "val_accuracy": 0.30864,
+      "val_macro_f1": 0.15723
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.87746,
+      "val_loss": 1.08893,
+      "val_accuracy": 0.39506,
+      "val_macro_f1": 0.30097
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6908,
+      "val_loss": 1.04168,
+      "val_accuracy": 0.4321,
+      "val_macro_f1": 0.34874
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.62957,
+      "val_loss": 1.02328,
+      "val_accuracy": 0.44444,
+      "val_macro_f1": 0.38262
+    }
+  ],
+  "data_source": "data\\demo",
+  "label_scheme": "ENCODE-like names; validate actual source"
+}

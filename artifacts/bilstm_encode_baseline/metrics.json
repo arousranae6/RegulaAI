@@ -1,0 +1,100 @@
+{
+  "run_name": "bilstm_encode_baseline",
+  "architecture": "bilstm",
+  "device": "cpu",
+  "parameters": 137987,
+  "duration_seconds": 3541.46,
+  "best_val_macro_f1": 0.50216,
+  "config": {
+    "data": "data/processed",
+    "out": "artifacts",
+    "run_name": "bilstm_encode_baseline",
+    "model": "bilstm",
+    "length": 200,
+    "epochs": 10,
+    "batch_size": 32,
+    "lr": 0.001,
+    "dropout": 0.2,
+    "kernel_size": 7,
+    "hidden_size": 128,
+    "heads": 4,
+    "d_model": 64,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "device": "auto"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.99338,
+      "val_loss": 0.98214,
+      "val_accuracy": 0.34968,
+      "val_macro_f1": 0.32858
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.95282,
+      "val_loss": 0.99653,
+      "val_accuracy": 0.44464,
+      "val_macro_f1": 0.41361
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.90603,
+      "val_loss": 0.89787,
+      "val_accuracy": 0.46729,
+      "val_macro_f1": 0.45909
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.88439,
+      "val_loss": 0.95399,
+      "val_accuracy": 0.47175,
+      "val_macro_f1": 0.46516
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.86908,
+      "val_loss": 0.91615,
+      "val_accuracy": 0.49743,
+      "val_macro_f1": 0.49841
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.85688,
+      "val_loss": 0.91849,
+      "val_accuracy": 0.48346,
+      "val_macro_f1": 0.48362
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.84636,
+      "val_loss": 0.91035,
+      "val_accuracy": 0.49004,
+      "val_macro_f1": 0.49221
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.84402,
+      "val_loss": 0.88862,
+      "val_accuracy": 0.49548,
+      "val_macro_f1": 0.50216
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.84119,
+      "val_loss": 0.92952,
+      "val_accuracy": 0.46462,
+      "val_macro_f1": 0.45088
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.83963,
+      "val_loss": 0.92017,
+      "val_accuracy": 0.50442,
+      "val_macro_f1": 0.50021
+    }
+  ],
+  "data_source": "data\\processed",
+  "label_scheme": "ENCODE-like names; validate actual source"
+}

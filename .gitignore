@@ -1,0 +1,70 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large datasets and model checkpoints
+data/processed/
+data/demo/
+*.pt
+*.pth
+*.ckpt
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.log
+
+# Local backups created during redesign
+frontend/src/main.before_*.jsx
+frontend/src/main.WORKING.jsx
+frontend/src/style.before_*.css
+frontend/src/style.WORKING.css
+frontend/src_before_chart_redesign/
+
+# Local experiment archives
+CNN_Checkpoint.zip
+RegulaAI_Colab.zip
+RegulaAI_Length_Study.zip
+
+# Generated experiment outputs
+artifacts/**/*.pt
+artifacts/**/*.pth
+artifacts/**/*.ckpt
+
+# Additional temporary files
+*.bak
+*.tmp
+
+# Large reference genome and original genomic datasets
+data/raw/
+
+# Additional local frontend backups
+frontend/src/*.before_*.jsx
+frontend/src/*.before_*.css
+frontend/src/*.WORKING.jsx
+frontend/src/*.WORKING.css
+
+# Additional development backups
+backend/*.before_*.py
+frontend/src/*.backup.jsx
+
+# Generated length-study datasets
+data/length_study/
+
+# Unused experimental stylesheet
+frontend/src/regulaai-light-theme.css

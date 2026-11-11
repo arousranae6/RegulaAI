@@ -1,0 +1,5 @@
+Architecture,Run,Parameters,Batch Latency (ms),Throughput (seq/s),Validation Macro-F1,Device,Batch Size,Sequence Length
+CNN,cnn_encode_baseline,43715,9.589,3336.98,0.5534,CPU,32,200
+BiLSTM,bilstm_encode_baseline,137987,47.599,672.29,0.50911,CPU,32,200
+CNN-BiLSTM,cnn_bilstm_encode_baseline,201283,20.887,1532.06,0.54315,CPU,32,200
+Transformer,transformer_encode_baseline,113411,55.666,574.85,0.51779,CPU,32,200
